@@ -1,0 +1,21 @@
+.conversor {
+    max-width: 1024px;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 30px auto;
+}
+
+input {
+    height: 30px;
+    font-size: 20px;
+}
+
+button {
+    padding: 13px;
+    border-radius: 8px;
+    background-color: white;
+    font-weight: bold;
+}
