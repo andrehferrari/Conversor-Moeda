@@ -12,6 +12,7 @@ export default class Conversor extends Component {
 
         this.converter = this.converter.bind(this);
     }
+
     converter () {
         let de_para = `${this.props.moedaA}-${this.props.moedaB}`
 
@@ -32,11 +33,11 @@ export default class Conversor extends Component {
     return (
       <div className='conversor'>
         <h2>{this.props.moedaA} para {this.props.moedaB}</h2>
-        <input type='text'
+        <input type='number' id='campo-valor'
         onChange={(event) => {this.setState({moedaA_valor:event.target.value})}}>
         </input>
         <button onClick={this.converter}>Converter</button>
-        <h2>R$ {this.state.moedaB_valor}</h2>
+        <h2 id='valor-convertido'>R$ {this.state.moedaB_valor}</h2>
       </div>
     )
   }
